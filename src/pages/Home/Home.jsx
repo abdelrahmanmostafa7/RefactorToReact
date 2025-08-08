@@ -1,11 +1,11 @@
 import React from "react";
 import "./Home.scss";
+import SearchBar from "../../components/SearchBar/SearchBar";
 
 const Home = () => {
   return (
     <div>
-      <h1>Home Page</h1>
-      <Link to="/details">Go to Details</Link>
+    <SearchBar />
     </div>
   );
 };

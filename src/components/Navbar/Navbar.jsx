@@ -1,10 +1,15 @@
-import React from 'react'
-import './Navbar.css';
+import React from "react";
+import "./Navbar.scss";
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
-  )
-}
+    <div className="navContainer">
+      <div className="navbar">
+        <h1>Where in the world</h1>
+        <button className="moodBtn">🌓 Dark Mode</button>
+      </div>
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;

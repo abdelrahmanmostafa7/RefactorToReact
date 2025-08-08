@@ -1,13 +1,12 @@
 import React from 'react'
-import './Details.css';
+import "./Details.scss";
+import BackBar from '../../components/BackBar/BackBar';
 
 
 const Details = () => {
   return (
     <div>
-      
-      <h1>Details Page</h1>
-      <a href="/">Back to Home</a>
+      <BackBar />
     </div>
   );
 }
