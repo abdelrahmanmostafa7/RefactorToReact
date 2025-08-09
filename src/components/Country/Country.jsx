@@ -1,9 +1,15 @@
 import React from 'react'
 import './Country.scss';
+import { useNavigate } from "react-router-dom";
 
 const Country = ({country}) => {
+  const navigate = useNavigate();
+
   return (
-    <div className="countryContainer">
+    <div
+      className="countryContainer"
+      onClick={() => navigate(`/country/${country.alpha3Code}`)}
+    >
       <img src={country.flags.svg} alt={country.name} />
       <h3>{country.name}</h3>
       <p>
