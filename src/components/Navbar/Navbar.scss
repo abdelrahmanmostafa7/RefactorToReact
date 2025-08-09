@@ -1,5 +1,6 @@
 .navContainer {
     display: flex;
+    width: 100%;
 }
 
 .navbar {
@@ -29,4 +30,20 @@
             }
     }
         
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+
+        h1 {
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        .moodBtn {
+            font-size: 14px;
+            padding: 5px 8px;
+        }
+    }
 }
