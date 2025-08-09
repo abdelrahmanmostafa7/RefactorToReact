@@ -1,13 +1,17 @@
 import React from "react";
 import "./SearchBar.scss";
-const SearchBar = () => {
+const SearchBar = ({ onSearch, onFilter }) => {
   return (
     <div className="SearchBarContainer">
       <div className="search">
-        <input type="text" />
+        <input
+          type="text"
+          placeholder="Search for a country..."
+          onChange={(e) => onSearch(e.target.value)}
+        />
         <span>🔍</span>
       </div>
-      <select>
+      <select onChange={(e) => onFilter(e.target.value)}>
         <option value="Filter by Region">Filter by Region</option>
         <option value="Africa">Africa</option>
         <option value="America">America</option>
