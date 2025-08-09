@@ -1,6 +1,7 @@
 import "./Details.scss"
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import BackBar from "../../components/BackBar/BackBar";
 
 const Details = () => {
   const { code } = useParams();
@@ -37,7 +38,8 @@ const Details = () => {
     }) || "No borders";
 
   return (
-    <>
+    <dev className="DetailsContainer">
+        <BackBar />
       <div className="country-details">
         <img src={country.flags.svg} alt={country.name} />
         <div className="info">
@@ -72,7 +74,7 @@ const Details = () => {
           </div>
         </div>
       </div>
-    </>
+    </dev>
   );
 };
 

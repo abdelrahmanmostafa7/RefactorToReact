@@ -1,4 +1,7 @@
-
+.DetailsContainer{
+    display: flex;
+    flex-direction: column;
+}
 .country-details {
     display: flex;
     flex-wrap: wrap;
