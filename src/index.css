@@ -19,4 +19,31 @@ body {
 
 a {
   text-decoration: none;
+
+
+}
+
+
+body.light {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+body.dark {
+  background-color: #000000;
+  color: white;
+}
+
+.navbar {
+  background-color: inherit;
+}
+
+
+.moodBtn {
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  color: inherit;
+  font-size: 14px;
 }

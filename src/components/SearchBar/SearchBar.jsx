@@ -6,7 +6,6 @@ const SearchBar = ({ onSearch, onFilter }) => {
       <div className="search">
         <input
           type="text"
-          placeholder="Search for a country..."
           onChange={(e) => onSearch(e.target.value)}
         />
         <span>🔍</span>
